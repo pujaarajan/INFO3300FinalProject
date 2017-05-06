@@ -2,12 +2,49 @@
 <head>
 <title>INFO 3300 - Data-driven Web Applications</title>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<style>
 
+<style>
+  /*TODO reconfigure size of frames for visual and text renderings*/
+  #sections {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    top: 0px;
+    z-index: 90;
+  }
+
+  .step {
+    margin-bottom: 200px;
+  }
+
+  #vis {
+    display: inline-block;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    margin-left: 0;
+
+    height: 600px;
+    width: 600px;
+    background-color: #ddd;
+  }
 </style>
 </head>
 <body>
+  <div id='graphic'>
 
+    <div id='sections'>
+      <section class="step">
+        <div class="title">Final Project</div>
+      </section>
+      <section class="step">
+        <!-- another section -->
+      </section>
+    </div>
 
+    <div id='vis'>
+    </div>
+
+  </div>
 </body>
 </html>
