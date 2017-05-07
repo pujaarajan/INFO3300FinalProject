@@ -1,50 +1,50 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>INFO 3300 - Data-driven Web Applications</title>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="scroller.js"></script>
-<style>
-  /*TODO reconfigure size of frames for visual and text renderings*/
-  #sections {
-    position: relative;
-    display: inline-block;
-    width: 250px;
-    top: 0px;
-    z-index: 90;
-  }
-
-  .step {
-    margin-bottom: 200px;
-  }
-
-  #vis {
-    display: inline-block;
-    position: fixed;
-    top: 60px;
-    z-index: 1;
-    margin-left: 0;
-
-    height: 600px;
-    width: 600px;
-    background-color: #ddd;
-  }
-</style>
+  <title>Scrolling Sections</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="js/scroller.js"></script>
+<script src="js/sections.js"></script>
 </head>
 <body>
+<div class="container">
   <div id='graphic'>
-
     <div id='sections'>
       <section class="step">
-        <div class="title">Final Project</div>
+        <div class="title">ALL ABOUT APPLE</div>
+        Blah blah blah.<br/><br/>Blah blah blah.
       </section>
       <section class="step">
-        <!-- another section -->
+        <div class="title">Jan Feb 2016</div>
+        Blah.
       </section>
-    </div>
+      <section class="step">
+        <div class="title">Mar Apr 2016</div>
+        Blah.
+      </section>
+      <section class="step">
+        <div class="title">June July 2016</div>
+        Blah.
+      </section>
+      <section class="step">
+        <div class="title">Aug Sep 2016</div>
+        Blah.
+      </section>
+      <section class="step">
+        <div class="title">Oct Nov 2016</div>
+        Blah.
+      </section>
 
+    </div>
     <div id='vis'>
     </div>
 
   </div>
+</div>
+
+
 </body>
 </html>
+
